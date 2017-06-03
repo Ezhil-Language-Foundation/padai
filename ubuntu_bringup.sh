@@ -1,7 +1,7 @@
 #!/bin/bash -x
 # (C) 2017 Ezhil Language Foundation
 # 
-# This script brings up a basic Ubuntu/later, machine 
+# This script brings up a basic Ubuntu16/later, machine 
 # to a usable configuration involving a basic Tamil fonts,
 # remove VNC server with Xwindows. It has Python, Git, Gcc
 # other tools for development.
