@@ -20,34 +20,34 @@ fi
 
 USERNAME=$1
 PASSWORD=$2
-dnf install git
+dnf -y install git
 if [ $EXTRA -gt 0 ]
 then
-    dnf install llvm
+    dnf -y install llvm
 fi
-dnf install gcc
-dnf install gtk+
-dnf install python2
-dnf install python3
-dnf install vnc
-dnf install pygobject
-dnf install pygtk
-dnf install pygobject3 python3-gobject
-dnf install tigervnc-server -y
+dnf -y install gcc
+dnf -y install gtk+
+dnf -y install python2
+dnf -y install python3
+dnf -y install vnc
+dnf -y install pygobject
+dnf -y install pygtk
+dnf -y install pygobject3 python3-gobject
+dnf -y install tigervnc-server -y
 adduser  $USERNAME
 echo $PASSWORD | passwd $USERNAME
-dnf install metacity
-dnf install gnome3
-dnf install gnome2
-dnf install Xorg
-dnf install fonttools
-dnf install fontmatrix
-dnf install python3-gobject
-dnf install pygobject3
-dnf install gtk3
-dnf install gtk3-engines
-dnf install glade3
-dnf install glade
+dnf -y install metacity
+dnf -y install gnome3
+dnf -y install gnome2
+dnf -y install Xorg
+dnf -y install fonttools
+dnf -y install fontmatrix
+dnf -y install python3-gobject
+dnf -y install pygobject3
+dnf -y install gtk3
+dnf -y install gtk3-engines
+dnf -y install glade3
+dnf -y install glade
 
 ######## goto devel directory #########
 cd ~$USERNAME/devel

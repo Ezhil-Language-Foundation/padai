@@ -21,39 +21,39 @@ fi
 USERNAME=$1
 PASSWORD=$2
 
-sudo apt-get install gcc
-sudo apt-get install gtk+
-sudo apt-get install python2
-sudo apt-get install python3
-sudo apt-get install vnc
-sudo apt-get install pygobject
-sudo apt-get install pygtk
-sudo apt-get install pygobject3 python3-gobject
+sudo apt-get -y install gcc
+sudo apt-get -y install gtk+
+sudo apt-get -y install python2
+sudo apt-get -y install python3
+sudo apt-get -y install vnc
+sudo apt-get -y install pygobject
+sudo apt-get -y install pygtk
+sudo apt-get -y install pygobject3 python3-gobject
 
-sudo apt-get install  gir1.2-gtk-3.0
-sudo apt-get install --upgrade  gir1.2-gtk-3.0
-sudo apt-get install --upgrade python3-gi-cairo
-sudo apt-get install gdb
-sudo apt-get install gir1.2-gdkpixbuf-2.0
-sudo apt-get install gir1.2-gdkpixbuf-2.0 --force
-sudo apt-get install gobject
-sudo apt-get install libgdk-pixbuf2
-sudo apt-get install libgdk-pixbuf2.0-dev
-sudo apt-get install libgdk-pixbuf2.36
-sudo apt-get install libgdk-pixbuf2.36-dev
-sudo apt-get install libgdkpixbuf-2
-sudo apt-get install libgdkpixbuf-2.0
-sudo apt-get install libgtk-devel
-sudo apt-get install libgtk-devel-3.0
-sudo apt-get install nvidia-xconfig
-sudo apt-get install python3-gi-cairo
-#sudo apt-get install tamil-gtk2im
-#sudo apt-get install tamil-ttf-fonts
-#sudo apt-get install ttf-tamil-fonts
-#sudo apt-get install ttf-tamil-fonts-udeb
-sudo apt-get install vnc
-sudo apt-get install vncserver
-sudo apt-get install xfonts-100dpi xfonts-75dpi
+sudo apt-get -y install  gir1.2-gtk-3.0
+sudo apt-get -y install --upgrade  gir1.2-gtk-3.0
+sudo apt-get -y install --upgrade python3-gi-cairo
+sudo apt-get -y install gdb
+sudo apt-get -y install gir1.2-gdkpixbuf-2.0
+sudo apt-get -y install gir1.2-gdkpixbuf-2.0 --force
+sudo apt-get -y install gobject
+sudo apt-get -y install libgdk-pixbuf2
+sudo apt-get -y install libgdk-pixbuf2.0-dev
+sudo apt-get -y install libgdk-pixbuf2.36
+sudo apt-get -y install libgdk-pixbuf2.36-dev
+sudo apt-get -y install libgdkpixbuf-2
+sudo apt-get -y install libgdkpixbuf-2.0
+sudo apt-get -y install libgtk-devel
+sudo apt-get -y install libgtk-devel-3.0
+sudo apt-get -y install nvidia-xconfig
+sudo apt-get -y install python3-gi-cairo
+#sudo apt-get -y install tamil-gtk2im
+#sudo apt-get -y install tamil-ttf-fonts
+#sudo apt-get -y install ttf-tamil-fonts
+#sudo apt-get -y install ttf-tamil-fonts-udeb
+sudo apt-get -y install vnc
+sudo apt-get -y install vncserver
+sudo apt-get -y install xfonts-100dpi xfonts-75dpi
 #sudo apt-get reinstall gir1.2-gdkpixbuf-2.0 
 #sudo apt-get remove  gir1.2-gtk-3.0
 #sudo apt-get remove  py-gobject
@@ -65,18 +65,18 @@ sudo apt-get update
 
 adduser  $USERNAME
 echo $PASSWORD | passwd $USERNAME
-sudo apt-get install metacity
-sudo apt-get install gnome3
-sudo apt-get install gnome2
-sudo apt-get install Xorg
-sudo apt-get install fonttools
-sudo apt-get install fontmatrix
-sudo apt-get install python3-gobject
-sudo apt-get install pygobject3
-sudo apt-get install gtk3
-sudo apt-get install gtk3-engines
-sudo apt-get install glade3
-sudo apt-get install glade
+sudo apt-get -y install metacity
+sudo apt-get -y install gnome3
+sudo apt-get -y install gnome2
+sudo apt-get -y install Xorg
+sudo apt-get -y install fonttools
+sudo apt-get -y install fontmatrix
+sudo apt-get -y install python3-gobject
+sudo apt-get -y install pygobject3
+sudo apt-get -y install gtk3
+sudo apt-get -y install gtk3-engines
+sudo apt-get -y install glade3
+sudo apt-get -y install glade
 
 ######## goto devel directory #########
 cd ~$USERNAME/devel
