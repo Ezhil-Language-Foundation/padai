@@ -57,14 +57,16 @@ sudo apt-get -y install xfonts-100dpi xfonts-75dpi
 #sudo apt-get reinstall gir1.2-gdkpixbuf-2.0 
 #sudo apt-get remove  gir1.2-gtk-3.0
 #sudo apt-get remove  py-gobject
-sudo apt-get update gir1.2-gdkpixbuf-2.0 
-sudo apt-get update python3-gi-cairo
-sudo apt-get updgrade python3-gi-cairo
-sudo apt-get upgrade gir1.2-gdkpixbuf-2.0 
-sudo apt-get update
+sudo apt-get -y update gir1.2-gdkpixbuf-2.0 
+sudo apt-get -y update python3-gi-cairo
+sudo apt-get -y updgrade python3-gi-cairo
+sudo apt-get -y upgrade gir1.2-gdkpixbuf-2.0 
+sudo apt-get -y update
 
 adduser  $USERNAME
-echo $PASSWORD | passwd $USERNAME
+# passwd on command line ?
+usermod -aG sudo $USERNAME
+
 sudo apt-get -y install metacity
 sudo apt-get -y install gnome3
 sudo apt-get -y install gnome2
