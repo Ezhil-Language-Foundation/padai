@@ -25,6 +25,9 @@ sudo apt-get -y install gcc
 sudo apt-get -y install gtk+
 sudo apt-get -y install python2
 sudo apt-get -y install python3
+sudo apt-get -y install python-pip
+sudo apt-get -y install python3-pip
+sudo apt-get -y install python-gi
 sudo apt-get -y install vnc
 sudo apt-get -y install pygobject
 sudo apt-get -y install pygtk
@@ -80,6 +83,7 @@ sudo apt-get -y install gtk3-engines
 sudo apt-get -y install glade3
 sudo apt-get -y install glade
 sudo apt-get -y install vnc4server
+sudo apt-get -y install xterm
 ######## goto devel directory #########
 cd ~$USERNAME/devel
 export TEST_EZHIL_DEVELOPMENT=1
@@ -100,7 +104,9 @@ cd pyinstaller && python setup.py sdist build && python setup.py sdist install
 git clone https://github.com/thamizha/tamil-fonts.git
 cd tamil-fonts
 chmod +x ./ubuntu_install.sh
-mkdir /usr/share/fonts/truetype
+mkdir -p /usr/share/fonts/truetype
 ./ubuntu_install.sh
 
 shutdown -r now
+# START Xterm like
+# DISPLAY=localhost:1 xterm &
