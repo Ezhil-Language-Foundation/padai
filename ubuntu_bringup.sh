@@ -79,7 +79,7 @@ sudo apt-get -y install gtk3
 sudo apt-get -y install gtk3-engines
 sudo apt-get -y install glade3
 sudo apt-get -y install glade
-
+sudo apt-get -y install vnc4server
 ######## goto devel directory #########
 cd ~$USERNAME/devel
 export TEST_EZHIL_DEVELOPMENT=1
